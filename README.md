@@ -1,3 +1,15 @@
+TEST ONLY
+=========
+
+This branch is meant to test carry propagation for public key
+cryptography.  It does not work in constant time, do not use in
+production.
+
+It works by instrumenting fundamental field arithmetic operations, and
+asserts that we never add or subtract too many times before performing
+carry propagation.
+
+
 Monocypher (Developer Edition)
 ------------------------------
 

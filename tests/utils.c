@@ -133,7 +133,7 @@ void* alloc(size_t size)
     return buf;
 }
 
-//@ ensures \result = 0;
+//@ ensures \result == 0;
 int vector_test(void (*f)(const vector[], vector*),
                 const char *name, size_t nb_inputs,
                 size_t nb_vectors, u8 **vectors, size_t *sizes)

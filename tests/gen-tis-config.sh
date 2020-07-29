@@ -145,7 +145,7 @@ do
         echo '  ]'                                                 >> $TIS_CONFIG
         echo ', "compilation_cmd": "-Isrc -Isrc/optional -Itests"' >> $TIS_CONFIG
         echo ', "machdep"        :' "\"$platform\""                >> $TIS_CONFIG
-#       echo ', "raw_options     : " { "-no-results" : "true" }'   >> $TIS_CONFIG
+        echo ', "raw_options     : " { "-no-results" : "true" }'   >> $TIS_CONFIG
         echo ', "main"           :' "\"$entry_point\""             >> $TIS_CONFIG
         echo '},'                                                  >> $TIS_CONFIG
     done
